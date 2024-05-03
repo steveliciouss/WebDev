@@ -7,16 +7,10 @@ body {
 }
 header {
     font-size: 20px;
-    background-color: #0077cc;
-    color: #0077cc;
-    padding: 30px;
-    text-align: center;
-}
-.content {
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 10px;
-    display: inline-block;
+    background-color: #00027e;
+    color: #ffffff;
+    padding: 20px;
+    text-align:left;
 }
 h2 {
     font-family: Arial, sans-serif;
@@ -47,13 +41,10 @@ textarea {
     border-radius: 5px;
 }
 input[type="submit"] {
-    background-color: #0077cc;
+    background-color: #00027e;
     color: #fff;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-}
-input[type="submit"]:hover {
-    background-color: #005faa;
 }
