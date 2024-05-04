@@ -1,3 +1,18 @@
+header {
+    font-size: 20px;
+    background-color: #00027e;
+    color: #ffffff;
+    padding: 20px;
+    text-align:left;
+    font-family: "Times New Roman", Times, sans-serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+header a {
+    color: inherit; /* Inherit color from the header */
+    text-decoration: none; /* Remove underline from the link */
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,19 +20,19 @@ body {
     background-color: #f2f2f2;
     color: #333;
 }
-header {
-    font-size: 20px;
-    background-color: #00027e;
-    color: #ffffff;
-    padding: 20px;
-    text-align:left;
-}
-h2 {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    margin: 10px auto;
-    max-width: 700px;
-    border-radius: 10px;
+
+/* request */
+.hire {
+    font-family: "Times New Roman", Times, sans-serif;
+    font-size: medium;
+    margin: 0px;
+    text-align: center;
+    background: #00027e;
+    color: white;
+    padding: 5px;
+    border: #00027e;
+    border-radius: 10px;    
+    margin-bottom: 15px;
 }
 form {
     background-color: #fff;
@@ -39,6 +54,7 @@ textarea {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    box-sizing: border-box;
 }
 input[type="submit"] {
     background-color: #00027e;
@@ -47,4 +63,42 @@ input[type="submit"] {
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+}
+
+/* Home page*/
+.intro {
+    font-family: "Times New Roman", Times, sans-serif;
+    text-align: left;
+    background-color: white;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 250px;
+    margin-right: 150px;
+    margin-left: -40px;
+}
+.introContext{
+    margin-left: 100px;
+}
+.homeP {
+    background-color: #00027e;
+}
+.request-button {
+    position:absolute;
+    bottom: 30px;
+    right: 20px;
+    transition: transform 0.3s ease;
+}
+.request-button button {
+    padding: 15px 30px; 
+    border-radius: 20px; 
+    font-size: 18px; 
+    border: none;
+    cursor: pointer;
+}
+.request-button button:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+.request-button button:active {
+    transform: translateY(2px); /* Add pressed effect when clicked */
 }
