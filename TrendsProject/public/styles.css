@@ -73,7 +73,6 @@ input[type="submit"] {
     padding: 20px;
     border-radius: 50px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 250px;
     margin-right: 150px;
     margin-left: -40px;
 }
@@ -90,6 +89,10 @@ input[type="submit"] {
     transition: transform 0.3s ease;
 }
 .request-button button {
+    font-family: "Times New Roman", Times, sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+    color:#00027e;
     padding: 15px 30px; 
     border-radius: 20px; 
     font-size: 18px; 
@@ -101,4 +104,12 @@ input[type="submit"] {
 }
 .request-button button:active {
     transform: translateY(2px); /* Add pressed effect when clicked */
+}
+
+.pillars {
+    object-fit: cover;
+    transform: translateX(110%);
+    width: 400px;/* Fill the image from left to right */
+    height: auto; /* Allow the image to adjust its height */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
 }
