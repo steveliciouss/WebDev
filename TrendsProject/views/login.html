@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADNU Helper - Login Page</title>
+    <link rel="stylesheet" href="/TrendsProject/public/styles.css">
+</head>
+<body class = "homeP">
+    
+    <div class="login">
+        <!-- action for database-->
+        <form action="database.php" method="POST" class="login_signup-Form">  
+
+            <img src="../images/icon.png" alt="icon" class="logo">
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter your Email" required><br>
+            
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="Enter your Password" required><br>
+            
+            <a href="#" class="textButton">Forgot Password?</a>
+
+            <button type="submit" name="login">Login</button>
+
+            <div class="login_signup"><p>Don't Have An Account?</p></div>
+            <a href="signup.html" class="textButton-signup">Sign Up</a>
+        </form>
+    </div>
+    
+    
+</body>
+</html>

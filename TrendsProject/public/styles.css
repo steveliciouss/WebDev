@@ -1,3 +1,4 @@
+/* header */
 header {
     font-size: 20px;
     background-color: #00027e;
@@ -7,12 +8,32 @@ header {
     font-family: "Times New Roman", Times, sans-serif;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 header a {
     color: inherit; /* Inherit color from the header */
     text-decoration: none; /* Remove underline from the link */
 }
+.headerLoginSignup {
+    display: inline-block;
+  }
+.headerLoginSignup .button {
+    margin-left: 10px;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: white;
+    background-color: #00027e;
+    border: none;
+    cursor: pointer;
+}
+.headerLoginSignup .button:hover {
+background-color:  #00027e;
+box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
 
+/* body */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -34,7 +55,7 @@ body {
     border-radius: 10px;    
     margin-bottom: 15px;
 }
-form {
+.req-form {
     background-color: #fff;
     padding: 20px;
     margin: 20px auto;
@@ -105,11 +126,86 @@ input[type="submit"] {
 .request-button button:active {
     transform: translateY(2px); /* Add pressed effect when clicked */
 }
-
 .pillars {
     object-fit: cover;
     transform: translateX(110%);
     width: 400px;/* Fill the image from left to right */
     height: auto; /* Allow the image to adjust its height */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+.footerHome {
+    color: whitesmoke;
+}
+
+/* login & signup */
+.login_signup-Form {
+    background-color: #fff;
+    padding: 20px;
+    width: 50%; 
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+    /* Center content vertically and horizontally */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login_signup-Form label {
+    font-weight: bold;
+    text-align: left;
+    width: 100%;
+    margin-left: 320px;
+    font-size: medium;
+}
+
+.login_signup-Form input[type="email"],
+.login_signup-Form input[type="password"],
+.login_signup-Form input[type="text"] {
+    padding: 3px;
+    width: 100%;
+    max-width: 300px;
+    border: none; 
+    border-bottom: 1px solid #ccc; 
+    background: none;
+    height: 20px; /* Set the height of inputs */
+}
+.textButton {
+    color: grey; 
+    font-weight: bold;
+    cursor: pointer;
+    font-size: small;
+    text-decoration-line: none;
+    margin-left: 190px;
+    
+}
+.login_signup-Form button {
+    background-color:#00027e;
+    border-radius: 20px; 
+    color: #fff; 
+    border: none; 
+    cursor: pointer; 
+    padding: 10px 18px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.login_signup-Form button:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+.logo {
+    width: 30%;
+}
+.login_signup { 
+    font-size: smaller;
+    color: grey;
+    margin-top: 20px;
+}
+.textButton-signup { 
+    color: #00027e;
+    text-decoration: none;
+    margin-top: -10px;
+    font-weight: bold;
 }
