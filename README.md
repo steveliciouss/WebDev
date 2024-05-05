@@ -1,3 +1,4 @@
 # WebDev
 Trends Project
-# need to fix the image in the hp
+# need to fix the image in the homepage
+# backend ready 
