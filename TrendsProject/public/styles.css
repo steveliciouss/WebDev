@@ -154,13 +154,6 @@ input[type="submit"] {
     justify-content: center;
     align-items: center;
 }
-.login_signup-Form label {
-    font-weight: bold;
-    text-align: left;
-    width: 100%;
-    margin-left: 320px;
-    font-size: medium;
-}
 
 .login_signup-Form input[type="email"],
 .login_signup-Form input[type="password"],
