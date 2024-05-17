@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADNU Helper - Signup</title>
+    <link rel="stylesheet" href="/static/users/styles.css">
+</head>
+<body class = "homeP">
+    <style>
+        .homeP {
+    background-image: url('/static/users/images/4pillars.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-size: 100% 100%;
+}
+    </style>
+    <div class="login">
+        <!-- action for database-->
+        <form action="#" method="POST" class="login_signup-Form">  
+
+            <img src="/static/users/images/icon.png" alt="icon" class="logo">
+
+            
+            <input type="text" name="fullName" id="fullName" placeholder="Full Name" required><br>
+            <input type="email" name="email" id="email" placeholder="Email" required><br>
+            <input type="password" name="password" id="password" placeholder="Password" required><br>
+            <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password" required><br>
+
+            <div class="signup_button">
+                <a href="{% url 'home2' %}" id="signupLink">Sign Up</a>
+            </div>
+
+            <div class="login_signup"><p>Already Have An Account?</p></div>
+            <a href="{% url 'login' %}" class="textButton-signup">Log in</a>
+
+        </form>
+    </div>
+
+    <script src="/static/users/javascript/signup.js"></script>
+
+</body>
+</html>

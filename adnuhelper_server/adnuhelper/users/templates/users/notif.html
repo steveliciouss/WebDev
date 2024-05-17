@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADNU Helper - Notifications</title>
+    <link rel="stylesheet" href="/static/users/styles.css">
+</head>
+<body class="notif-body">
+    <header>
+        <div class="home2_">
+            <a href="{% url 'home2' %}" id="homeLink">
+                <h1>ADNU HELPER</h1>
+            </a>
+        </div>
+        <div class="header_icons">
+            <a href="{% url 'accounts' %}" ><img src="/static/users/images/acc_icon.png" alt="account" class="acc_icon"></a>
+        </div>
+    </header>
+
+    <div class="notification-box">
+        <div class="back-btn">
+            <button onclick="goBack()">Go Back</button>
+        </div>
+        <h2>Notifications</h2>
+        <div class="notifications">
+            <p>Request #00002: handling of the document</p>
+            <p>Status: In Progress</p>
+        </div>
+        <div class="notifications">
+            <p>Request #00002: handling of the document</p>
+            <p>Status: Pending</p>
+        </div>
+        <div class="notifications">
+            <p>Request #00001: Food Delivery</p>
+            <p>Status: Completed</p>
+        </div>
+        <div class="notifications">
+            <p>Request #00001: Food Delivery</p>
+            <p>Status: In Progress</p>
+        </div>
+        <div class="notifications">
+            <p>Request #00001: Food Delivery</p>
+            <p>Status: Pending</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 ADNU Helper. All rights reserved.</p>
+    </footer>
+
+    <script src="/static/users/javascript/goback.js"></script>
+</body>
+</html>

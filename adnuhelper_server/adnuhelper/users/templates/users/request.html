@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADNU Helper - Hire A Helper</title>
+    <link rel="stylesheet" href="/static/users/styles.css">
+</head>
+<body>
+    <header>
+        <div class="home2_">
+            <a href="{% url 'home2' %}" id="homeLink">
+                <h1>ADNU HELPER</h1>
+            </a>
+        </div>
+        <div class="header_icons">
+            <a href="{% url 'notification' %}"><img src="/static/users/images/white bell.png" alt="notif" class="notif_bell"></a>
+            <a href="{% url 'accounts' %}" ><img src="/static/users/images/acc_icon.png" alt="account" class="acc_icon"></a>
+        </div>
+    </header>
+
+    <form action="#" method="post" class="req-form">
+        <div class ="hire">
+            <h2> Hire a helper</h2>
+        </div>
+
+        <label for="task">Task Title:</label>
+        <input type="text" id="taskTitle" name="TaskTitle" placeholder="Task Title">
+        
+        <textarea id="task" name="task" rows="4" placeholder="Describe the task you need help with"></textarea>
+
+        <input type="text" id="name" name="name" placeholder="Full Name">
+
+        <input type="text" id="email" name="email" placeholder="Your Email">
+
+        <input type="text" id="m_num" name="m_num" placeholder="Your Mobile Number">
+
+        <a href="{% url 'submitted' %}" class="submit">Submit</a>
+    </form>
+
+    <footer>
+        <p>&copy; 2024 ADNU Helper. All rights reserved.</p></div>
+    </footer>
+
+</body>
+</html>

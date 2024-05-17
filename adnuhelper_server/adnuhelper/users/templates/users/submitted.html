@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADNU Helper - Submitted</title>
+    <link rel="stylesheet" href="/static/users/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="/static/users/chat_style.css">
+</head>
+
+
+<body class = "submitted-body">
+    <header>
+        <div class="home2_">
+            <a href="{% url 'home2' %}" id="homeLink">
+                <h1>ADNU HELPER</h1>
+            </a>
+        </div>
+        <div class="header_icons">
+            <a href="{% url 'notification' %}"><img src="/static/users/images/white bell.png" alt="notif" class="notif_bell"></a>
+            <a href="{% url 'accounts' %}" ><img src="/static/users/images/acc_icon.png" alt="account" class="acc_icon"></a>
+        </div>
+    </header>
+
+    <div class="confirmation">
+        You have successfully submitted!
+    </div>
+
+    <img src="/static/users/images/checkicon.png" alt="Check Icon" class="checkicon">
+    <h2>Thank You For Submitting!</h2>
+
+    <li>A helper will be in touch </li>
+
+    <div class="sp_buttons">
+        <style>
+            .sp_buttons a{
+    display: block;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px 50px;
+    background-color: #00027e;
+    color: white;
+    font-weight: 800;
+    border: none;
+    text-decoration: none;
+    max-width: 10%;
+    transform: translateX(253%);
+    text-align: center;
+}
+.sp_buttons a:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+.sp_buttons:active {
+    transform: translatey(2px);
+}
+.sp_buttons {
+    margin-bottom: 20px;
+}
+        </style>
+        <a href="{% url 'customer_service' %}" class="c_s-button">Customer Service</a>
+    </div>
+
+    <!-- chat -->
+    <button class="chatbutton" onclick="showChat()">Start Chat</button> <!-- Button to show the chatbox -->
+    <div id="chat-container">
+        <div class="chat-header">HELPER</div>
+        <div id="chatbox"></div>
+        <div id="input-container">
+            <input type="text" id="input" placeholder="Type your message here...">
+            <button id="sendBtn" onclick="sendMessage()">></button>
+        </div>
+        <button id="exitBtn" onclick="exitChat()">X</button>
+    </div>
+
+
+
+    <script src="/static/users/javascript/fadeout.js"></script>
+    <script src="/static/users/javascript/chat.js"></script>
+
+    <footer>
+        <p>&copy; 2024 ADNU Helper. All rights reserved.</p>
+    </footer>
+</body>
+</html>

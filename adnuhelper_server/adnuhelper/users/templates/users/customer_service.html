@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADNU Helper - Costumer Service</title>
+    <link rel="stylesheet" href="/static/users/styles.css">
+</head>
+<body class="c_s-body">
+    <header>
+        <div class="home2_">
+            <a href="{% url 'home2' %}" id="homeLink">
+                <h1>ADNU HELPER</h1>
+            </a>
+        </div>
+        <div class="header_icons">
+            <a href="{% url 'notification' %}"><img src="/static/users/images/white bell.png" alt="notif" class="notif_bell"></a>
+            <a href="{% url 'accounts' %}" ><img src="/static/users/images/acc_icon.png" alt="account" class="acc_icon"></a>
+        </div>
+    </header>
+
+    <h2>Costumer Service</h2>
+
+    <div class="back-btn">
+        <button onclick="goBack()">Go Back</button>
+    </div>
+
+    <div>
+        <!-- action for database-->
+        <form action="#" method="POST" class="c_s-form">  
+
+            <label for="ticket">How can we help you?</label>
+            <textarea id="ticket" name="ticket" rows="10" placeholder="Type here..."></textarea>
+
+            <button>Submit</button>
+
+            <h3>Contact Us:</h3>
+            <li>Cellphone Number: 09707324179</li>
+            <li>Email: jamad@gbox.adnu.edu.ph</li>
+
+        </form>
+    </div> 
+
+    <script src="/static/users/javascript/goback.js"></script>
+
+    <footer>
+        <p>&copy; 2024 ADNU Helper. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

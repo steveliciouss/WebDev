@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADNU Helper - Home</title>
+    <link rel="stylesheet" href="/static/users/styles.css">
+</head>
+<body class = "homeP">
+    <style>
+        .homeP {
+    background-image: url('/static/users/images/4pillars.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-size: 100% 100%;
+}
+    </style>
+    <header>
+        <div class="home2_">
+            <a href="home2.html" id="homeLink">
+                <h1>ADNU HELPER</h1>
+            </a>
+        </div>
+        <div class="header_icons">
+            <a href="{% url 'notification' %}"><img src="/static/users/images/white bell.png" alt="notif" class="notif_bell"></a>
+            <a href="{% url 'accounts' %}"><img src="/static/users/images/acc_icon.png" alt="account" class="acc_icon"></a>
+        </div>
+    </header>
+
+    <div class="confirmation">
+        Welcome!
+    </div>
+
+    <h2>PRIMUM REGNUM DEI</h2>
+    <div class = "intro">
+        <p class = "introContext">
+            The AdNU Helper seeks to improve the overall effectiveness of university operations by 
+            offering a single platform where everyone in campus can seek help. A help that gets you 
+            what you need or what you want in just a certain amount of time. Having a trustworthy website 
+            that guarantees you'll receive what you request.
+        </p>
+    </div>
+
+    <div class="request-button">
+        <a href="{% url 'request' %}"><button>Request Now</button></a>
+    </div>
+
+    <script src="/static/users/javascript/fadeout.js"></script>
+
+    <footer>
+        <p>&copy; 2024 ADNU Helper. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

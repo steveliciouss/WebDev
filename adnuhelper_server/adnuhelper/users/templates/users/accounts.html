@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADNU Helper - Account</title>
+    <link rel="stylesheet" href="/static/users/styles.css">
+</head>
+<body>
+    <header>
+        <div class="home2_">
+            <a href="{% url 'home2' %}" id="homeLink">
+                <h1>ADNU HELPER</h1>
+            </a>
+        </div>
+        <div class="header_icons">
+            <a href="{% url 'notification' %}"><img src="/static/users/images/white bell.png" alt="notif" class="notif_bell"></a>
+            <a href="{% url 'accounts' %}" ><img src="/static/users/images/acc_icon.png" alt="account" class="acc_icon"></a>
+        </div>
+    </header>
+
+
+    <div class="accounts-container">
+        <nav>
+            <a href="{% url 'home' %}">Logout</a>
+        </nav>
+
+        <div class="back-btn">
+            <button onclick="goBack()">Go Back</button>
+        </div>
+
+        <section class="profile-section">
+            <h2>Personal Information</h2>
+            <img src="/static/users/images/jua.jpg" class="profile_picture">
+            <p>Name: James P. Maderazo</p>
+            <p>Email: jamad@example.com</p>
+            <button class="edit-btn">Edit Profile</button>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 ADNU Helper. All rights reserved.</p></div>
+    </footer>
+
+    <script src="/static/users/javascript/goback.js"></script>
+</body>
+</html>
